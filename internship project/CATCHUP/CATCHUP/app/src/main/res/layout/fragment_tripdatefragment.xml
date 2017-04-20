@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mypic"
+    tools:context="com.example.shivam.catchup.tripdatefragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:text="End Date"
+                android:id="@+id/textView10"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="39dp"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@+id/editText6"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textSize="20dp"
+                android:id="@+id/textView9"
+                android:layout_marginTop="37dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:hint="yyyy-mm-dd"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/icon"
+                android:layout_alignTop="@+id/editText6"
+                android:layout_toEndOf="@+id/editText6" />
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:ems="10"
+                android:hint="yyyy-mm-dd"
+                android:id="@+id/editText7"
+                android:layout_alignBottom="@+id/textView10"
+                android:layout_toStartOf="@+id/imageButton2" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton2"
+                android:src="@drawable/icon"
+                android:layout_above="@+id/textView11"
+                android:layout_alignStart="@+id/imageButton"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Estimated No. Of Days"
+                android:textSize="20dp"
+                android:id="@+id/textView11"
+
+                android:layout_marginTop="36dp"
+                android:layout_below="@+id/editText7"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignEnd="@+id/imageButton2" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="UPDATE"
+                android:id="@+id/button2"
+                android:textSize="20dp"
+
+
+                android:background="#d2dc273f"
+
+                android:layout_below="@+id/textView11"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText39"
+        android:hint="user_id"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

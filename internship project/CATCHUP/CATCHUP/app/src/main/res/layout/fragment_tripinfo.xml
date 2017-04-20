@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mypic"
+    tools:context="com.example.shivam.catchup.tripinfoFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination Country"
+        android:textSize="20dp"
+
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText12"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination State"
+        android:textSize="20dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText13"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination Places"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/editText13"
+         />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText14"
+        android:layout_below="@+id/editText13"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip with"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friends"
+        android:textSize="20dp"
+        android:onClick="getclick"
+        android:id="@+id/checkBox1"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family"
+        android:textSize="20dp"
+        android:id="@+id/checkBox2"
+        android:onClick="getclick"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox1"
+        android:layout_alignEnd="@+id/editText14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/button"
+        android:background="#c14d4d"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText40"
+        android:hint="user_id"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignEnd="@+id/textView13" />
+</RelativeLayout>
