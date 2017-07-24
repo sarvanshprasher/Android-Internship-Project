@@ -20,14 +20,14 @@ $user_id=$_POST['user_id'];
 
 
 
-$sql="INSERT INTO signuptable (firstname,lastname,username,mobile,email,password,gender,user_id) VALUES('$firstname','$lastname','$username','$mobile','$email','$passwrd','$gender','$user_id')";
+$sql="INSERT INTO signuptable (firstname,lastname,username,mobile,email,password,gender,user_id) VALUES('{$firstname}','{$lastname','$username','$mobile','$email','$passwrd','$gender','$user_id')";
 
- 
-
-
+$result = mysqli_query($con, $sql); 
 
 
-if ($con->query($sql) === TRUE) {
+
+
+if ($result) {
 echo "success";
 } else {
 echo "Error: " . $sql . "<br>" . $con->error;
